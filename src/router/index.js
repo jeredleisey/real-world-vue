@@ -4,6 +4,7 @@ import EventLayout from '../views/event/Layout.vue'
 import EventDetails from '../views/event/Details.vue'
 import EventRegister from '../views/event/Register.vue'
 import EventEdit from '../views/event/Edit.vue'
+import SimpleForm from '../views/SimpleForm.vue'
 import About from '../views/About.vue'
 import NotFound from '../views/NotFound.vue'
 import NetworkError from '../views/NetworkError.vue'
@@ -68,6 +69,11 @@ const routes = [
     path: '/network-error',
     name: 'NetworkError',
     component: NetworkError,
+  },
+  {
+    path: '/new',
+    name: 'NewEvent',
+    component: SimpleForm,
   },
 ]
 
